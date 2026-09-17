@@ -4,6 +4,7 @@
     --primary-color: #171717;
     --secondary-color: #777777;
     --success-color: #16803c;
+    --success-bg: #eaf7ef;
     --border-color: #e5e5e5;
 
     --heading-size: 22px;
@@ -20,18 +21,14 @@ body {
     color: var(--primary-color);
 
     font-family: Arial, sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .payment-card {
-    width: 360px;
+    max-width: 360px;
+    margin: 40px auto;
     padding: 28px;
 
     background-color: var(--card-color);
-
     text-align: center;
 
     border-radius: 12px;
@@ -62,7 +59,7 @@ h1 {
     font-size: var(--status-size);
     font-weight: 700;
 
-    background-color: #eaf7ef;
+    background-color: var(--success-bg);
 
     border-radius: 20px;
 }
@@ -72,9 +69,6 @@ h1 {
 }
 
 .detail-row {
-    display: flex;
-    justify-content: space-between;
-
     padding: 14px 0;
 
     border-bottom: 1px solid var(--border-color);
