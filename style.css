@@ -1,0 +1,87 @@
+:root {
+    --background-color: #f4f6f8;
+    --card-color: #ffffff;
+    --primary-color: #171717;
+    --secondary-color: #777777;
+    --success-color: #16803c;
+    --success-bg: #eaf7ef;
+    --border-color: #e5e5e5;
+
+    --heading-size: 22px;
+    --amount-size: 42px;
+    --status-size: 14px;
+    --detail-size: 14px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
+    font-family: Arial, sans-serif;
+}
+
+.payment-card {
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 28px;
+
+    background-color: var(--card-color);
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+h1 {
+    margin: 0 0 20px;
+
+    color: var(--primary-color);
+    font-size: var(--heading-size);
+    font-weight: 600;
+}
+
+.amount {
+    margin-bottom: 12px;
+
+    color: var(--primary-color);
+    font-size: var(--amount-size);
+    font-weight: 700;
+}
+
+.status {
+    display: inline-block;
+    margin-bottom: 28px;
+    padding: 6px 12px;
+
+    color: var(--success-color);
+    font-size: var(--status-size);
+    font-weight: 700;
+
+    background-color: var(--success-bg);
+
+    border-radius: 20px;
+}
+
+.details {
+    text-align: left;
+}
+
+.detail-row {
+    padding: 14px 0;
+
+    border-bottom: 1px solid var(--border-color);
+
+    font-size: var(--detail-size);
+}
+
+.detail-row span {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.detail-row strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
